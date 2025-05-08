@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../FAVICON/favicon_io (2)/favicon.ico"
+    />
+  </head>
+
+  <body>
+    <!-- NAV BAR -->
+    <section>
+      <header>
+        <div>
+          <nav class="navigationBar">
+            <ul>
+              <li id="logo">
+                <a href="HOME.html"
+                  ><img src="../LOGO/Your paragraph text.png" alt="My Image"
+                /></a>
+              </li>
+              <li id="link">
+                <a href="ABOUT.html">About</a>
+              </li>
+              <li id="link">
+                <a href="ENROLL.html">Enroll</a>
+              </li>
+              <li id="link">
+                <a href="NEWS.html">News</a>
+              </li>
+              <li id="link">
+                <a href="COURSES.html">Courses</a>
+              </li>
+              <li id="link">
+                <a href="HOME.html" class="active">Home</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </section>
+
+    <!-- HERO -->
+    <section>
+      <div class="hero-box">
+        <img class="mySlides" src="../HERO_IMAGES/HERO_01.png" alt="Hero 1" />
+        <img class="mySlides" src="../HERO_IMAGES/HERO_02.png" alt="Hero 2" />
+        <img class="mySlides" src="../HERO_IMAGES/HERO_03.png" alt="Hero 3" />
+        <img class="mySlides" src="../HERO_IMAGES/HERO_04.png" alt="Hero 4" />
+        <img class="mySlides" src="../HERO_IMAGES/HERO_05.png" alt="Hero 5" />
+      </div>
+
+      <div class="hero-content">
+        <div id="hero-caption">
+          <h1>The Great Aim of Education is not Knowledge, But Action</h1>
+          <p>Herbert Spencer</p>
+        </div>
+        <div id="button">
+          <button><a target="_blank" href="ENROLL.html">Enroll Now!</a></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section>
+      <div class="courses">
+        <h1>COURSES WE OFFER</h1>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <i class="ri-microscope-fill"></i>
+          <h2>STEM</h2>
+          <p>
+            The STEM strand hones analytical, problem-solving, and critical
+            thinking skills through intensive training in Science, Mathematics,
+            Engineering, and Technology. Ideal for students aiming for careers
+            in Medicine, Engineering, IT, or the Natural Sciences
+          </p>
+        </div>
+
+        <div class="column">
+          <i class="ri-scales-3-fill"></i>
+          <h2>HUMSS</h2>
+          <p>
+            The HUMSS strand nurtures a deep understanding of human behavior,
+            culture, and society. It prepares students for careers in Education,
+            Psychology, Law, Communication, and Social Work.
+          </p>
+        </div>
+
+        <div class="column">
+          <i class="ri-briefcase-4-fill"></i>
+          <h2>ABM</h2>
+          <p>
+            The ABM strand focuses on business principles, marketing finance,
+            and economic systems. It equips students with skills for managing
+            enterprises, handling finances, and leading the corporate world.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER 1 -->
+    <section>
+      <div class="footerOne">
+        <div class="footerIcons">
+          <a target="_blank" href="https://www.facebook.com/bhor.bor.1"
+            ><i class="ri-facebook-circle-fill"></i
+          ></a>
+          <a
+            target="_blank"
+            href="s2402438@usls.edu.ph
+          "
+            ><i class="ri-mail-line"></i
+          ></a>
+          <a target="_blank" href="https://www.instagram.com/_iammattheeww_/"
+            ><i class="ri-instagram-fill"></i
+          ></a>
+        </div>
+        <p>ALL RIGHTS RESERVED 2025</p>
+        <p>CREATED BY: MATTHEW JUSTIN INTOY</p>
+      </div>
+    </section>
+
+    <!-- FOOTER 2 -->
+    <section>
+      <div class="footerTwo">
+        <p>
+          © 2025 Academia Institute, Bacolod City 6100, Negros Occidental,
+          Philippines | +63 123 456 7890
+        </p>
+      </div>
+    </section>
+  </body>
+
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {
+        myIndex = 1;
+      }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 8500);
+    }
+  </script>
+</html>

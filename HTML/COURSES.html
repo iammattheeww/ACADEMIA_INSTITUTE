@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Courses</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../FAVICON/favicon_io (2)/favicon.ico"
+    />
+  </head>
+
+  <body>
+    <!-- NAV BAR -->
+    <section>
+      <header>
+        <div>
+          <nav class="navigationBar">
+            <ul>
+              <li id="logo">
+                <a href="HOME.html"
+                  ><img src="../LOGO/Your paragraph text.png" alt="My Image"
+                /></a>
+              </li>
+              <li id="link">
+                <a href="ABOUT.html">About</a>
+              </li>
+              <li id="link">
+                <a href="ENROLL.html">Enroll</a>
+              </li>
+              <li id="link">
+                <a href="NEWS.html">News</a>
+              </li>
+              <li id="link">
+                <a href="COURSES.html" class="active">Courses</a>
+              </li>
+              <li id="link">
+                <a href="HOME.html">Home</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </section>
+
+    <!-- HERO -->
+    <section>
+      <div class="hero-box">
+        <img
+          class="mySlides"
+          src="../HERO_IMAGES/COURSE_01.png"
+          alt="Enrollment 1"
+        />
+        <img
+          class="mySlides"
+          src="../HERO_IMAGES/COURSE_02.png"
+          alt="Enrollment 2"
+        />
+        <img
+          class="mySlides"
+          src="../HERO_IMAGES/COURSE_03.png"
+          alt="Enrollment 3"
+        />
+        <img
+          class="mySlides"
+          src="../HERO_IMAGES/COURSE_04.png"
+          alt="Enrollment 4"
+        />
+        <img
+          class="mySlides"
+          src="../HERO_IMAGES/COURSE_05.png"
+          alt="Enrollment 5"
+        />
+      </div>
+
+      <div class="hero-content">
+        <div id="hero-caption">
+          <h1>Our Course</h1>
+          <p>
+            Explore pathways in innovation, society, and business—your future
+            starts here.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section>
+      <div class="courses">
+        <h1>COURSES WE OFFER</h1>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <i class="ri-puzzle-2-fill"></i>
+          <h2>Nursery</h2>
+          <p>
+            Nursery program nurtures early development through play,
+            exploration, and care. Children are introduced to colors, sounds,
+            and social skills in a safe, joyful environment. Its focus is
+            pivoted on building a strong foundation for emotional and cognitive
+            growth.
+          </p>
+        </div>
+
+        <div class="column">
+          <i class="ri-pencil-fill"></i>
+          <h2>Kindergarten</h2>
+          <p>
+            Kindergarten at Academia Institute blends creativity with early
+            academic learning. Young learners engage in structured activities
+            that spark curiosity and encourage independence. This course
+            prepares children for the next step with confidence and excitement.
+          </p>
+        </div>
+
+        <div class="column">
+          <i class="ri-lightbulb-flash-fill"></i>
+          <h2>Preparatory</h2>
+          <p>
+            The Preparatory level bridges playful learning with readiness for
+            formal schooling. Students develop foundational literacy, numeracy,
+            and critical thinking skills. This approach builds both competence
+            and confidence for Grade School.
+          </p>
+        </div>
+
+        <div class="column">
+          <i class="ri-book-fill"></i>
+          <h2>Grade School</h2>
+          <p>
+            Grade School offers a well-rounded curriculum in literacy, math,
+            science, and values education. Students are guided to think
+            independently, collaborate, and build discipline. Grade school helps
+            shape learners into curious thinkers and responsible citizens.
+          </p>
+        </div>
+
+        <div class="column">
+          <i class="ri-brain-2-fill"></i>
+          <h2>Junior High School</h2>
+          <p>
+            The Junior High School program fosters academic growth and character
+            development. Students are challenged to think critically, express
+            themselves, and apply knowledge in real-world contexts. This program
+            prepares them for the academic demands of Senior High.
+          </p>
+        </div>
+
+        <div class="column">
+          <i class="ri-microscope-fill"></i>
+          <h2>Senior High School</h2>
+          <p>
+            Senior High School offers specialized tracks to prepare students for
+            college or career. Whether in STEM, HUMSS, or ABM, learners gain
+            relevant skills and deeper subject understanding. Its holistic
+            approach ensures readiness for life beyond school.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER 1-->
+    <section>
+      <div class="footerOne">
+        <div class="footerIcons">
+          <a target="_blank" href="#"
+            ><i class="ri-facebook-circle-fill"></i
+          ></a>
+          <a
+            target="_blank"
+            href="s2402438@usls.edu.ph
+          "
+            ><i class="ri-mail-line"></i
+          ></a>
+          <a target="_blank" href="https://www.instagram.com/_iammattheeww_/"
+            ><i class="ri-instagram-fill"></i
+          ></a>
+        </div>
+        <p>ALL RIGHTS RESERVED 2025</p>
+        <p>CREATED BY: MATTHEW JUSTIN INTOY</p>
+      </div>
+    </section>
+
+    <!-- FOOTER 2 -->
+    <section>
+      <div class="footerTwo">
+        <p>
+          © 2025 Academia Institute, Bacolod City 6100, Negros Occidental,
+          Philippines | +63 123 456 7890
+        </p>
+      </div>
+    </section>
+  </body>
+
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {
+        myIndex = 1;
+      }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 8500);
+    }
+  </script>
+</html>
